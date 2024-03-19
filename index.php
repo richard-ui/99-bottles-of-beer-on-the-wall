@@ -1,19 +1,17 @@
 <?php
 
-echo "Ricks Beer Bottle Lyrics";
-
 $bottles = "";
 
-for ($counter = 99; $counter >= 1; $counter = $counter - 1) 
+// For Loop starts from 99, decrease by 1 over every iteration.
+for ($counter = 99; $counter >= 1; $counter = $counter - 1) // If counter greater than or equal to 1 then decrease counter by one.
 {
     if ($counter == 1) {
         $bottles = 'bottle';
     } else {
         $bottles = 'bottles';
     }
-    echo $counter . " " . $bottles . " of beer on the wall.";
-    if ($counter < 99) {
-        echo("");
+    echo $counter . " " . $bottles . " of beer on the wall. ";
+    if ($counter < 99) { // Need to repeat same this line again if counter below 99.
         echo $counter . " " . $bottles . " of beer on the wall.";
     }
     echo $counter . " " . $bottles . " of beer.";
